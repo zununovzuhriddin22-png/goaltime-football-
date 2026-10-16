@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GoalTime — futbol yangiliklari, jamoalar va uchrashuvlar tahlili.">
+<title>GoalTime | Futbol olami</title>
+<style>
+:root{--bg:#0b1220;--panel:#131e30;--gold:#f5c451;--text:#f5f7fb;--muted:#aab6c8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
+header{background:#101a2b;border-bottom:1px solid #26344a}
+.wrap{max-width:1050px;margin:auto;padding:0 18px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:20px 0}
+.logo{font-size:29px;font-weight:900;color:var(--gold);letter-spacing:-1px}
+.logo span{color:white}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:0 0 17px}
+a{color:inherit;text-decoration:none}
+nav a{font-size:14px;color:var(--muted)}
+nav a:hover{color:var(--gold)}
+.hero{padding:42px 0;background:linear-gradient(120deg,#14233b,#0b1220)}
+.tag{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:clamp(32px,7vw,55px);line-height:1.08;max-width:680px;margin:14px 0}
+.hero p{color:var(--muted);line-height:1.7;max-width:580px}
+.btn{display:inline-block;margin-top:12px;padding:12px 18px;background:var(--gold);color:#111827;font-weight:bold;border-radius:7px}
+section{padding:28px 0}
+.heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:17px}
+.heading h2{font-size:23px;margin:0}
+.heading span{font-size:12px;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.card{background:var(--panel);border:1px solid #24334a;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:165px;object-fit:cover;display:block;background:#24334a}
+.content{padding:15px}
+.category{color:var(--gold);font-size:11px;font-weight:bold;text-transform:uppercase}
+.card h3{font-size:18px;line-height:1.4;margin:10px 0}
+.card p{color:var(--muted);font-size:14px;line-height:1.6}
+.read{color:var(--gold);font-size:13px;font-weight:bold}
+.analysis{background:#111c2e;border:1px solid #293951;border-radius:12px;padding:20px}
+.analysis h3{margin-top:0}
+.analysis p{color:var(--muted);line-height:1.8}
+.ad{border:1px dashed #53627a;border-radius:10px;padding:22px;text-align:center;color:var(--muted)}
+.ad strong{display:block;color:var(--gold);margin-bottom:8px}
+footer{margin-top:20px;border-top:1px solid #26344a;padding:25px 0;color:var(--muted);font-size:13px;line-height:1.8}
+@media(max-width:700px){.grid{grid-template-columns:1fr 1fr}.card img{height:125px}.card h3{font-size:16px}.top{padding:16px 0}nav{gap:14px}}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.card img{height:190px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<div class="top">
+<a class="logo" href="#home">GOAL<span>TIME</span></a>
+<span style="color:#aab6c8;font-size:12px">FUTBOL OLAMI</span>
+</div>
+<nav>
+<a href="#home">Bosh sahifa</a>
+<a href="#news">Yangiliklar</a>
+<a href="#analysis">Tahlillar</a>
+<a href="#about">Biz haqimizda</a>
+</nav>
+</div>
+</header>
+
+<main id="home">
+<div class="hero">
+<div class="wrap">
+<div class="tag">FUTBOL • YANGILIKLAR • TAHLIL</div>
+<h1>Futbol olamidagi barcha voqealar — bir joyda.</h1>
+<p>Sevimli jamoalaring, muhim uchrashuvlar va futbol tahlillari bilan tanish. GoalTime bilan futbolga yanada yaqin bo‘l!</p>
+<a class="btn" href="#news">Yangiliklarni ko‘r ↓</a>
+</div>
+</div>
+
+<section id="news" class="wrap">
+<div class="heading"><h2>⚽ Futbol bo‘limlari</h2><span>GOALTIME</span></div>
+<div class="grid">
+<article class="card">
+<img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=800&q=80" alt="Futbol maydoni">
+<div class="content">
+<div class="category">Futbol yangiliklari</div>
+<h3>Futbol olamidagi so‘nggi xabarlar</h3>
+<p>Jamoalar, murabbiylar va futbolchilar haqidagi yangiliklarni shu bo‘limga joylashtir.</p>
+<a class="read" href="#about">Batafsil ↓</a>
+</div>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" alt="Futbol uchrashuvi">
+<div class="content">
+<div class="category">Uchrashuvlar</div>
+<h3>O‘yin oldidan nimalarga e’tibor berish kerak?</h3>
+<p>Jamoalarning formasi, tarkibi va o‘yin uslubini tahlil qilish uchun bo‘lim.</p>
+<a class="read" href="#analysis">Tahlilni ko‘r ↓</a>
+</div>
+</article>
+<article class="card">
+<img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=800&q=80" alt="Futbol to‘pi">
+<div class="content">
+<div class="category">Taktika</div>
+<h3>Futbol taktikasi va jamoalar uslubi</h3>
+<p>Maydondagi o‘zgarishlar, hujum va himoya usullari haqida tahliliy maqolalar.</p>
+<a class="read" href="#analysis">O‘qishni boshlash ↓</a>
+</div>
+</article>
+</div>
+</section>
+
+<section id="analysis" class="wrap">
+<div class="heading"><h2>📊 Tahlil maydoni</h2></div>
+<div class="analysis">
+<h3>Uchrashuvlarni qanday tahlil qilamiz?</h3>
+<p>GoalTime’da jamoalarning so‘nggi natijalari, o‘yin uslubi, tarkibdagi o‘zgarishlar va boshqa omillarni yoritish mumkin. Har bir maqolani tekshirilgan ma’lumotlar bilan yangilab bor.</p>
+<p><strong>Diqqat:</strong> bu sayt namunasi. Hozircha unda jonli hisoblar yoki avtomatik yangilanadigan yangiliklar yo‘q.</p>
+</div>
+</section>
+
+<section class="wrap">
+<div class="ad">
+<strong>REKLAMA UCHUN JOY</strong>
+Hamkorlik tasdiqlangandan va kerakli ruxsatlar olingandan keyin bu yerga reklama joylashtirish mumkin.
+</div>
+</section>
+
+<section id="about" class="wrap">
+<div class="heading"><h2>GoalTime haqida</h2></div>
+<div class="analysis">
+<p>GoalTime — futbol yangiliklari va tahlillari uchun mo‘ljallangan mustaqil sayt. Maqsadimiz — futbol muxlislariga tushunarli va foydali ma’lumot taqdim etish.</p>
+<p>Sayt mustaqil loyiha hisoblanadi va hozircha hech bir klub yoki bukmeker bilan rasmiy hamkorlikni anglatmaydi.</p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="logo">GOAL<span>TIME</span></div>
+Futbol olami bir joyda.
+<br>© 2026 GoalTime. Barcha huquqlar himoyalangan.
+</div>
+</footer>
+</body>
+</html>
